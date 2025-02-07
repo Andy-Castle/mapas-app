@@ -6,8 +6,7 @@ import { enableProdMode } from '@angular/core';
 
 import Mapboxgl from 'mapbox-gl';
 
-Mapboxgl.accessToken =
-  'pk.eyJ1IjoibWFzcXVlcmFkZSIsImEiOiJjbTZqcXFvbGUwM3Z0MnFxM3NuMjB6cTkxIn0.AZDN64QgZzNdHDzBX72J4A';
+Mapboxgl.accessToken = environment.apiKey;
 
 if (!navigator.geolocation) {
   alert('Navegador no soporta la geolocalización');
