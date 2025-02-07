@@ -34,6 +34,8 @@ export class SearchResultsComponent {
     if (!this.placesService.userLocation)
       throw new Error('No hay userLocation');
 
+    this.placesService.deletePlaces();
+
     const start = this.placesService.userLocation;
     const end = place.geometry.coordinates as [number, number];
 
